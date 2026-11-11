@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <title>雲林縣榮民服務處｜雲林地區特約商店查詢系統</title>
+  <meta name="description" content="國軍退除役官兵輔導委員會雲林縣榮民服務處｜雲林地區特約商店查詢與地圖導航系統，結合雲林在地食衣住行育樂資源，出示合格證件即享專屬特約優惠。">
+  <!-- 網站圖示 (雲林縣榮服處圖徽) -->
+  <link rel="icon" href="https://drive.google.com/thumbnail?id=1fuDAcmApht5sQEQb-aAlZxr8s9WXnSCd&sz=w128">
+  <link rel="apple-touch-icon" href="https://drive.google.com/thumbnail?id=1fuDAcmApht5sQEQb-aAlZxr8s9WXnSCd&sz=w256">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    html, body {
+      width: 100%;
+      height: 100%;
+      height: 100dvh;
+      overflow: hidden;
+      background-color: #0a193d;
+      font-family: "Microsoft JhengHei", "Noto Sans TC", sans-serif;
+    }
+    /* 全螢幕無縫嵌入框架 */
+    .iframe-container {
+      position: fixed;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      height: 100dvh;
+      border: 0;
+    }
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      display: block;
+      background-color: #f8fafc;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="iframe-container">
+    <!-- 👇 請將下方 src="000/exec" 替換為您的 Google Apps Script 網頁應用程式網址 -->
+    <iframe
+      id="appFrame"
+      src="https://script.google.com/macros/s/AKfycbyXHBLGRRETIyZcrPFx04cGU6aH86OC_l8Th2dXAlskn0vftFurxIk3MXA1ykTf0nOaaA/exec"
+      title="雲林縣榮民服務處｜雲林地區特約商店查詢系統"
+      allow="geolocation *; clipboard-write *; fullscreen *"
+      allowfullscreen
+      loading="eager">
+    </iframe>
+  </div>
+
+</body>
+</html>
